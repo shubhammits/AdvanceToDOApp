@@ -1,0 +1,162 @@
+/* Reset some default styles */
+body, h1, ul, li, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Container Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"], select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Search Bar Styling */
+#search {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Sort Dropdown Styling */
+#sort {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Task List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between; /* Space between task details and actions */
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+li.completed {
+    background-color: #e0ffe0;
+    color: #777;
+    text-decoration: line-through;
+}
+
+/* Style for the task details */
+.task-details {
+    display: flex;
+    gap: 20px; /* Add space between task name and due date */
+    align-items: center;
+}
+
+.task-name {
+    font-weight: bold;
+    margin-right: 20px; /* Space between task name and due date */
+}
+
+.due-date {
+    color: #888;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+/* Actions button styling */
+.actions {
+    margin-left: auto; /* Push the action buttons to the right */
+    display: flex;
+    gap: 10px; /* Space between each action button */
+}
+
+.actions a {
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/* Add hover effects to buttons for better visuals */
+.complete-btn:hover,
+.not-completed-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
+    text-decoration: underline;
+    background-color: #f0f0f0; /* Light background on hover */
+}
+
+/* Specific color for each button */
+.complete-btn {
+    color: #28a745;
+}
+
+.not-completed-btn {
+    color: #17a2b8;
+}
+
+.edit-btn {
+    color: #ffc107;
+}
+
+.delete-btn {
+    color: #dc3545;
+}
